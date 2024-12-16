@@ -4,8 +4,6 @@ public class Report5 {
         try {
             int length = str.length();
         } catch (NullPointerException e) {
-            System.out.println("NullPointerException was called");
-            
             System.out.println("例外メッセージ: " + e.getMessage());
         }
     }
