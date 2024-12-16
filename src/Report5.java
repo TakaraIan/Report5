@@ -1,6 +1,12 @@
 public class Report5 {
     public static void main(String[] args) {
         String str = null;
-        System.out.println(str.length());
+        try {
+            int length = str.length();
+        } catch (NullPointerException e) {
+            System.out.println("NullPointerException was called");
+            
+            System.out.println("例外メッセージ: " + e.getMessage());
+        }
     }
 }
